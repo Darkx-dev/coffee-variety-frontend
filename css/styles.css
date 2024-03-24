@@ -24,7 +24,7 @@ main {
 }
 
 main div.bg__main {
-  background: url(/images/bg-cafe.jpg) no-repeat top;
+  background: url(images/bg-cafe.jpg) no-repeat top;
   min-height: 40vh;
   background-size: cover;
 }
