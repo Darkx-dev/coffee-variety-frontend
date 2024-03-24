@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+:root {
+  --bodyBg: #111315;
+  --mainBg: #1b1d1f;
+  --grayish: #6f757c;
+  --creamy: #fef7ee;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bodyBg);
+}
+
+main {
+  position: relative;
+}
+
+main div.bg__main {
+  background: url(/images/bg-cafe.jpg) no-repeat top;
+  min-height: 40vh;
+  background-size: cover;
+}
+
+main div.main__window {
+  overflow-x: hidden;
+  color: var(--creamy);
+  padding: 5rem 1rem;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-200px);
+  transform: translateX(-50%) translateY(-200px);
+  width: 90vw;
+  background-color: var(--mainBg);
+}
+
+main div.main__window div.main__head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+main div.main__window div.main__head p {
+  color: var(--grayish);
+  max-width: 30rem;
+}
+
+main div.main__window div.main__head h1 {
+  position: relative;
+}
+
+main div.main__window div.main__head h1::after {
+  content: url(/images/vector.svg);
+  position: absolute;
+  z-index: -1;
+  top: -60px;
+  left: 115px;
+}
+
+main div.main__window div.main__head div.buttons__wrapper {
+  padding: 0.5rem;
+}
+
+main div.main__window div.main__head div.buttons__wrapper button {
+  background-color: transparent;
+  padding: 0.6rem 0.8rem;
+  color: var(--creamy);
+  border: none;
+  border-radius: 8px;
+}
+
+main div.main__window div.main__head div.buttons__wrapper button:first-child {
+  background-color: var(--grayish);
+}
+
+main div.main__window div.coffee__cards__wrapper {
+    margin: 1.5rem auto;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    350px
+  );
+}
