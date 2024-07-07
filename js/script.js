@@ -15,10 +15,9 @@ const returnCards = async () => {
             <img src="${coffee.image}" alt="Coffee 1" />
         </div>
         <div class="coffe__card__info">
-            <h3>Coffee 1</h3>
+            <h3>${coffee.title}</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem, quasi.
+                ${coffee.description}
             </p>
         </div>
     </div>
