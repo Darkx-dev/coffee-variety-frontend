@@ -12,7 +12,7 @@ const returnCards = async () => {
     let clutter = `
     <div class="coffe__card">
         <div class="coffe__card__image">
-            <img src="${coffee.image}" alt="Coffee 1" />
+            <img src="${coffee.image}" alt="Coffee 1" width="50" height="50"/>
         </div>
         <div class="coffe__card__info">
             <h3>${coffee.title}</h3>
